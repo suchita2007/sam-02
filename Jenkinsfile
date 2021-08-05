@@ -37,7 +37,7 @@ pipeline {
       // this stage is triggered only for feature branches (feature*),
       // which will build the stack and deploy to a stack named with branch name.
       when {
-        branch 'feature*'
+        branch 'main'
       }
       agent {
         docker {
